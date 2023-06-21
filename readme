@@ -1,0 +1,25 @@
+Ao instalar o python marque para adicionar ao Path
+
+powershell uma unica vez libera a criação do venv que isola as libs para o projeto:
+set-ExecutionPolicy -scope CurrentUser -ExecutionPolicy RemoteSigned
+
+criar python virtual env (ultimo venv é o nome):
+python -m venv venv
+https://www.youtube.com/watch?v=m1TYpvIYm74&t=198s
+
+libs para instalar com comando:
+pip install opencv-python
+pip install tensorflow
+
+ativar venv:
+.\venv\Script\Activate.ps1 <-- powershell
+ou
+.\venv\Script\Activate.bat <-- cmd
+
+rodar o programa:
+python main.py
+
+Desenvolvido com base no projeto do canal Dev Ideias
+https://www.youtube.com/watch?v=qgTerD7-CeM
+
+Cuidado onde armazenar o código caminhos com espaço ou caracteres especiais dão erro ao executar o programa.
